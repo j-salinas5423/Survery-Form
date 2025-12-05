@@ -1,0 +1,129 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="UTF-8">
+    <title> Survey Form </title>
+    <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body>
+      <h1 id="title" for="title"> Survey Form </h1>
+      <p id="description" for="description"> Describe your experience using this service </p>
+      <form id="survey-form" >
+        <fieldset> 
+          <label id="name-label" for="name">Name: <input id="name" name="name" type="text" placeholder="First name" required /></label>
+            <label id="email-label" for="email">Email: <input id="email" name="emai" type="email" placeholder="someone@hotmail.com" required /></label>
+            <label id="number-label" for="age">Age: <input
+            id="number" name="age" type="number" min="18" max="100" placeholder="18+" required /></label>
+            </fieldset>
+            <fieldset>
+              <label for="dropdown">Why did you choose us?
+                <select id="dropdown" name="dropdown">
+                  <option value="">(select one)</option>
+                  <option value="1">Better value</option>
+                  <option value="2">Referred by a friend</option>
+                  <option value="3">Other</option>
+                  </select>
+                  </label>
+                  <fieldset>
+                    <legend>Reason for account creation (required)</legend>
+                    <label for="personal-choice"><input value="personal" id="personal-choice" type="radio" name="account-type" class="inline" checked /> Personal choice</label>
+                    <label for="business"><input value="business" id="business" type="radio" name="account-type" class="inline" />Business</label>
+                    <label for="for-the-free-trial"><input value="free-trial" id="for-the-free-trial" type="radio" name="account-type" class="inline" />For the free trial :)!</label>
+                    <label for="checkbox">What would you improve from this service? (check all that apply)
+                      <input value="trial" class="inline" id="checkbox" type="checkbox" name="checkbox"/> Longer free trial
+                      <input value="design" class="inline" id="checkbox" type="checkbox" name="checkbox"/> Better designs
+                      <input value="survey" class="inline" id="checkbox" type="checkbox" name="checkbox"/> Shorter surveys
+                      <input value="replies" class="inline" id="checkbox" type="checkbox" name="checkbox"/> Quicker replies
+                      <input value="courses" class="inline" id="checkbox" type="checkbox" name="checkbox"/> More interactive courses
+                      </label>
+                      <label for="suggestions">Any other comments:
+                        <textarea id="suggestions" name="suggestions" rows="2" cols="20" placeholder="More free trials :)"></textarea>
+                        </label>
+                        </fieldset>
+                        <input id="submit" type="submit" value="Submit" />
+                        </form>
+                        </body>
+                        </html>
+                      
+
+** end of index.html **
+
+** start of styles.css **
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #1b1b32;
+  color: #f5f6f7;
+  font-family: Tahoma;
+  font-size: 16px;
+}
+
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+}
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid #3b3b4f;
+}
+
+fieldset:last-of-type {
+  border-bottom: none;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+input, textarea {
+  background-color: #0a0a23;
+  border: 1px solid #0a0a23;
+  color: #ffffff;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #3b3b4f;
+  border-color: white;
+  min-width: 300px;
+}
+
+input[type="file"] {
+  padding: 1px 2px;
+}
+
+** end of styles.css **
+
